@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+
+}
+
+body{
+    background: #222;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(100%);
+}
+
+.card{
+    width: 90%;
+    max-width: 40rem;
+    background: linear-gradient(135deg, #ffc67b, #a3c93a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    cursor:pointer;
+    background: transparent;
+    
+}
+
+.search button img {
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+   
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 0.7rem 0.7rem;
+    height: 1.8rem;
+    border-radius: 30px;
+    flex: 0.98;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.weather-icon{
+    width: 10rem;
+    margin-top: 10px;
+
+}
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 400;
+}
+.weather h2{
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col{
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.col img{
+    width: 5rem;
+    margin-right: 1rem;
+}
+
+.humidity, .wind {
+    font-size: 30px;
+   
+}
+
+.error{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    display: none;
+}
+
+.city {
+    display:none;
+}
+
+.clear-text {
+    color:#303030
+}
+
+.card.clear {
+    background: linear-gradient(135deg, #f0fcad, #fce147); /* Clear weather: sunny yellow */
+}
+
+.card.clouds {
+    background: linear-gradient(135deg, #9c9c9c, #597797); /* Clouds: light steel blue */
+}
+
+.card.rain {
+    background: linear-gradient(135deg, #24b4c7, #004064); /* Rain: steel blue */
+}
+
+.card.storm {
+    background: linear-gradient(135deg, #1f1f1f, #0c00bb); /* Storm: dim gray */
+}
+
+.card.storm {
+    background: linear-gradient(135deg, #6fe7b5, #0c00bb); /* Storm: dim gray */
+}
