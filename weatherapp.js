@@ -59,8 +59,8 @@ const weatherAudio = document.querySelector("#weather-audio");
                 card.classList.add("clear");
                 card.classList.add("clear-text");
                 background.style.backgroundImage = "url('images/sunny background.jpg')";
-                weatherAudio.src = "audio/Desert Theme.mp3"; // Set the audio source
-                weatherAudio.play(); // Play the audio
+                // weatherAudio.src = "audio/Desert Theme.mp3"; // Set the audio source
+                // weatherAudio.play(); // Play the audio
                 } else if(data.weather[0].main == "Rain"){
                 weatherIcon.src = "images/rain icon.png"
                 card.classList.add("rain");
